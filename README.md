@@ -34,11 +34,12 @@ A single hidden-layer network trained on reduced MNIST dataset.
 - Normalizes pixel values (0.01-0.99)
 - One-hot encoding for labels
 - Works with 100-sample training set
+- Works with a much larger training set
 
 ### Training:
 - 5 epochs
 - 0.1 learning rate
-- Achieves ~60% accuracy on test set
+- Achieves ~60% accuracy on test set and 100% accuracy on full training set
 
 ### Visualization:
 - Includes sample digit display from test set
