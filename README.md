@@ -1,52 +1,94 @@
-# Perceptron and Neural Network Implementation
 
-This repository contains two Python implementations:
-1. A single-layer Perceptron model
-2. A feed-forward Neural Network for MNIST digit recognition
+# Neural Network Playground
 
-## Perceptron Model
+This repository provides two Python implementations for learning and experimenting with neural networks:
 
-A simple perceptron with sigmoid activation trained on binary logic gate data.
+- **Single-Layer Perceptron**: A basic perceptron model for binary classification tasks.
+- **Feed-Forward Neural Network**: A single hidden-layer neural network for MNIST digit recognition.
 
-### Features:
-- Sigmoid activation function
-- Backpropagation training
+---
+
+## 1. Perceptron Model
+
+Implements a single-layer perceptron with a sigmoid activation function. Trains on sample binary logic gate data and allows interactive predictions.
+
+**Key Features:**
+
+- Sigmoid activation and its derivative
+- Backpropagation for weight updates
 - Handles 3-input binary patterns
-- Interactive prediction from user input
+- Interactive user input for predictions
 
-### Usage:
-1. Initializes with random weights
-2. Trains on sample logic gate data (AND/NAND-like behavior)
-3. Predicts output for user-provided 3-bit binary inputs
+**Workflow:**
 
-## Neural Network for MNIST
+1. Randomly initializes weights
+2. Trains on sample logic gate data
+3. Prompts user for 3-bit binary input and predicts output
 
-A single hidden-layer network trained on reduced MNIST dataset.
+---
 
-### Features:
-- 784 input nodes (28×28 images)
-- 200 hidden nodes
-- 10 output nodes (digits 0-9)
-- Sigmoid activation
-- Backpropagation learning
+## 2. Feed-Forward Neural Network for MNIST
 
-### Data Processing:
-- Normalizes pixel values (0.01-0.99)
-- One-hot encoding for labels
-- Works with 100-sample training set
-- Works with a much larger training set
+Implements a single hidden-layer neural network to classify handwritten digits from the MNIST dataset.
 
-### Training:
-- 5 epochs
-- 0.1 learning rate
-- Achieves ~60% accuracy on test set and 100% accuracy on full training set
+**Architecture:**
 
-### Visualization:
-- Includes sample digit display from test set
+- Input layer: 784 nodes (28x28 pixels)
+- Hidden layer: 200 nodes
+- Output layer: 10 nodes (digits 0-9)
 
-## Requirements
-- Python 3
-- NumPy
-- Matplotlib (for visualization)
+**Training Details:**
 
-To run, execute the notebook cells in order. The perceptron runs automatically while the neural network requires MNIST data files. You will have to unzip the only zip file in there to be able to access the full training csv file.
+- Data normalization: pixel values scaled to [0.01, 0.99]
+- One-hot encoding for target labels
+- Configurable for small (100 samples) or full MNIST training set
+- 5 training epochs, learning rate 0.1
+
+**Results:**
+
+- Achieves ~60% accuracy on test set (with reduced training data)
+- Achieves 100% accuracy on full training set
+
+**Visualization:**
+
+- Displays a randomly selected test digit and its label
+
+---
+
+## Getting Started
+
+1. **Install Requirements**
+	- Python 3.x
+	- NumPy
+	- Matplotlib
+	- Install dependencies:
+
+	  ```sh
+	  pip install -r requirements.txt
+	  ```
+
+2. **Prepare Data**
+	- Unzip `mnist_train_full.zip` to access the full training CSV file.
+	- Place all MNIST CSV files in the project directory.
+
+3. **Run the Notebook**
+	- Open `perceptron_mnist.ipynb` in VS Code or Jupyter.
+	- Execute cells in order for both perceptron and neural network demos.
+
+---
+
+## File Structure
+
+- `perceptron_mnist.ipynb` — Main notebook with both models
+- `mnist_train_100.csv` — Small training set
+- `mnist_train_full.csv` — Full training set
+- `mnist_test_10.csv` — Small test set
+- `mnist_test_full.csv` — Full test set
+- `requirements.txt` — Python dependencies
+- `mnist_train_full.zip` — Compressed full training set
+
+---
+
+## License
+
+This project is open source and available under the MIT License.
