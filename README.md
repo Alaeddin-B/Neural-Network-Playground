@@ -58,22 +58,25 @@ Implements a single hidden-layer neural network to classify handwritten digits f
 ## Getting Started
 
 1. **Install Requirements**
-	- Python 3.x
-	- NumPy
-	- Matplotlib
-	- Install dependencies:
 
-	  ```sh
-	  pip install -r requirements.txt
-	  ```
+- Python 3.x
+- NumPy
+- Matplotlib
+- Install dependencies:
+
+   ```sh
+   pip install -r requirements.txt
+   ```
 
 2. **Prepare Data**
-	- Unzip `mnist_train_full.zip` to access the full training CSV file.
-	- Place all MNIST CSV files in the project directory.
+
+- Unzip `mnist_train_full.zip` to access the full training CSV file.
+- Place all MNIST CSV files in the project directory.
 
 3. **Run the Notebook**
-	- Open `perceptron_mnist.ipynb` in VS Code or Jupyter.
-	- Execute cells in order for both perceptron and neural network demos.
+
+- Open `perceptron_mnist.ipynb` in VS Code or Jupyter.
+- Execute cells in order for both perceptron and neural network demos.
 
 ---
 
