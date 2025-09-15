@@ -47,7 +47,7 @@ Implements a single hidden-layer neural network to classify handwritten digits f
 **Results:**
 
 - Achieves ~60% accuracy on test set (with reduced training data)
-- Achieves 100% accuracy on full training set
+- Achieves 97% accuracy on full training set
 
 **Visualization:**
 
